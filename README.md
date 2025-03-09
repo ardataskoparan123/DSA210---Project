@@ -3,7 +3,7 @@
 # Effect of Tobacco Usage in Cancer Patients in the Expression of Cancer Related Genes
 
 ## Idea of Project
-In this project, my aim is to analyze the relationship between tobacco usage and lung cancer by integrating clinical data and genomic data from lung cancer patients. The goal is to explore how smoking habits correlate with mutations in key cancer related genes (KRAS, ALK, EGFR) and whether gene expression levels are influenced by tobacco use. 
+In this project, my aim is to analyze the relationship between tobacco usage and lung cancer by integrating clinical data and genomic data from lung cancer patients. The goal is to explore how smoking habits correlate with mutations in key cancer related gene KRAS and whether gene expression levels are influenced by tobacco use. 
 
 ---
 
@@ -11,7 +11,7 @@ In this project, my aim is to analyze the relationship between tobacco usage and
 
 **Clinical Data:** Includes patient-specific tobacco usage history, smoking onset and quit, pack years, and cigarettes per day.
 
-**Genomic Data:** Contains gene expression levels of **KRAS, ALK, and EGFR** in lung cancer patients, categorized by smoking history.
+**Genomic Data:** Contain gene expression level of KRAS in lung cancer patients, categorized by smoking history.
 
 **Demographic Data:** Includes gender, age data to account for potential confounding factors.
 
@@ -37,16 +37,16 @@ In this project, my aim is to analyze the relationship between tobacco usage and
 
 ## Constructing Hypothesis
 
-  - **Null Hypothesis(H0):** Tobacco usage has no significant effect on the expression levels of lung cancer related genes KRAS, ALK, and EGFR.
+  - **Null Hypothesis(H0):** Tobacco usage has no significant effect on the expression levels of lung cancer related gene KRAS.
 
-  - **Alternative Hypothesis(H1):** Tobacco usage significantly influences the expression of cancer related genes KRAS, ALK, and EGFR.
+  - **Alternative Hypothesis(H1):** Tobacco usage significantly influences the expression of cancer related gene KRAS.
 
 
 ---
 
 ## Machine Learning Models
 
-  - Linear regression for analyzing the relationship between tobacco usage and gene expression levels and to determine how smoking habits impact KRAS, ALK, and EGFR expression.
+  - Linear regression for analyzing the relationship between tobacco usage and gene expression levels and to determine how smoking habits impact KRAS expression.
   
   - Support vector machines for modelling potential non-linear relationships in the gene expression data and to detect hidden patterns between tobacco exposure and gene activity.
   
