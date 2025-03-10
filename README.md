@@ -39,7 +39,7 @@ In this project, my aim is to analyze the relationship between tobacco usage and
 
   - **Null Hypothesis(H0):** Tobacco usage has no significant effect on the expression levels of lung cancer related genes KRAS, EGFR and ALK.
 
-  - **Alternative Hypothesis(H1):** Tobacco usage significantly influences the expression of cancer related gene KRAS.
+  - **Alternative Hypothesis(H1):** Tobacco usage significantly influences the expression of cancer related genes KRAS, EGFR and ALK.
 
 
 ---
