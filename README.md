@@ -46,7 +46,7 @@ In this project, my aim is to analyze the relationship between tobacco usage and
 
 ## Machine Learning Models
 
-  - Linear regression for analyzing the relationship between tobacco usage and gene expression levels and to determine how smoking habits impact KRAS expression.
+  - Linear regression for analyzing the relationship between tobacco usage and gene expression levels and to determine how smoking habits impact KRAS, ALK and EGFR expression.
   
   - Support vector machines for modelling potential non-linear relationships in the gene expression data and to detect hidden patterns between tobacco exposure and gene activity.
   
