@@ -3,7 +3,7 @@
 # Effect of Tobacco Usage in Cancer Patients in the Expression of Cancer Related Genes
 
 ## Idea of Project
-In this project, my aim is to analyze the relationship between tobacco usage and  expression of certain gene expression by integrating genomic data from lung cancer patients. The goal is to explore how smoking habits correlate with mutations in key cancer related genes KRAS, ALK and EGFR, and whether gene expression levels are influenced by tobacco use. 
+In this project, my aim is to analyze the relationship between tobacco usage and  expression of certain genes by using genomic data from lung cancer patients. The goal is to explore how smoking habits correlate with mutations in key cancer related genes KRAS, ALK and EGFR, and whether gene expression levels are influenced by tobacco use. 
 
 ---
 
