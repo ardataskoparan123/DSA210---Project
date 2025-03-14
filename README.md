@@ -23,7 +23,7 @@ In this project, my aim is to analyze the relationship between tobacco and alcoh
 ## Plan
 
 **Data Collection:**
-  - All three of clinical, genomic and demographic data will collected from GDC Data Portal of National Cancer Institute (https://portal.gdc.cancer.gov/). Filtration of the data will be done manually.
+  - All three of clinical, genomic and demographic data will collected from GDC Data Portal of National Cancer Institute (https://portal.gdc.cancer.gov/). Additional sites for data collection can be used later in the project. Filtration of the data will be done manually.
   - Data extraction will focus on patient-specific linkage between smoking status and gene expression.
 
 **Data Preparation and Analysis**
