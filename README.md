@@ -60,7 +60,7 @@ In this project, my aim is to analyze the relationship between tobacco and alcoh
 
 ## Additional Analysis: Predicting Lung Cancer Risk from Gene Expression
 
-Beyond analyzing lung cancer patients, I will extend my study to non-cancer individuals with similar demographic, clinical, and genomic profiles. The goal is to predict the probability of developing lung cancer based on gene expression patterns influenced by smoking and alcohol usage.
+Beyond analyzing lung cancer patients, I will also study non-cancer individuals with similar demographic, clinical, and genomic profiles. The goal in here is to predict the probability of developing lung cancer based on gene expression patterns influenced by smoking and alcohol usage.
 
 **Steps:**
 
@@ -70,7 +70,7 @@ Beyond analyzing lung cancer patients, I will extend my study to non-cancer indi
 
   - Compute probabilities for individuals developing lung cancer based on their gene expression patterns.
 
-  - Evaluate the model’s performance using metrics such as AUC-ROC, precision, and recall.
+  - Evaluate the model’s performance using metrics such as AUC-ROC, precision and recall.
 
 I believe this additional analysis will help understand whether lifestyle factors combined with genomic data can provide early warnings for lung cancer risk.
 
