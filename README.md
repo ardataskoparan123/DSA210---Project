@@ -3,17 +3,19 @@
 # Effect of Tobacco Usage in Cancer Patients in the Expression of Cancer Related Genes
 
 ## Idea of Project
-In this project, my aim is to analyze the relationship between tobacco usage and  expression of certain genes by using genomic data from lung cancer patients. My goal is to explore how smoking habits correlate with mutations in key cancer related genes KRAS, ALK and EGFR, and whether gene expression levels are influenced by tobacco use. 
+
+In this project, my aim is to analyze the relationship between tobacco and alcohol usage and the expression of certain genes by using genomic data from lung cancer patients. My goal is to explore how smoking and alcohol consumption habits correlate with mutations in key cancer-related genes KRAS, ALK, and EGFR and whether gene expression levels are influenced by these lifestyle factors.
+
 
 ---
 
 ## Description of Dataset
 
-**Clinical Data:** Includes patient-specific tobacco usage history, smoking onset and quit, pack years, and cigarettes per day.
+**Clinical Data:** Includes patient-specific tobacco and alcohol usage history, smoking onset and quit, pack years, cigarettes per day, alcohol intensity, etc.
 
-**Genomic Data:** Contain gene expression levels of KRAS, ALK and EGFR in lung cancer patients, categorized by smoking history.
+**Genomic Data:** Contains gene expression levels of KRAS, ALK, and EGFR in lung cancer patients, categorized by smoking and alcohol history..
 
-**Demographic Data:** Includes gender, age data to account for potential confounding factors.
+**Demographic Data:**  Includes gender, age, ethnicity, and other relevant factors to account for potential confounding variables.
 
 
 ---
@@ -37,9 +39,9 @@ In this project, my aim is to analyze the relationship between tobacco usage and
 
 ## Constructing Hypothesis
 
-  - **Null Hypothesis(H0):** Tobacco usage has no significant effect on the expression levels of lung cancer related genes KRAS, EGFR and ALK.
+  - **Null Hypothesis(H0):** Tobacco and alcohol usage has no significant effect on the expression levels of lung cancer related genes KRAS, EGFR and ALK.
 
-  - **Alternative Hypothesis(H1):** Tobacco usage significantly influences the expression of cancer related genes KRAS, EGFR and ALK.
+  - **Alternative Hypothesis(H1):** Tobacco and alcohol usage significantly influences the expression of cancer related genes KRAS, EGFR and ALK.
 
 
 ---
@@ -55,7 +57,22 @@ In this project, my aim is to analyze the relationship between tobacco usage and
 
 ---
 
-    
+
+## Additional Analysis: Predicting Lung Cancer Risk from Gene Expression
+
+Beyond analyzing lung cancer patients, I will extend my study to non-cancer individuals with similar demographic, clinical, and genomic profiles. The goal is to predict the probability of developing lung cancer based on gene expression patterns influenced by smoking and alcohol usage.
+
+**Steps:**
+
+  - Obtain data on non-cancer individuals with genomic, clinical, and demographic variables matching those of cancer patients.
+
+  - Apply machine learning classification models (Logistic Regression, Random Forest, Neural Networks) to predict lung cancer risk.
+
+  - Compute probabilities for individuals developing lung cancer based on their gene expression patterns.
+
+  - Evaluate the model’s performance using metrics such as AUC-ROC, precision, and recall.
+
+I believe this additional analysis will help understand whether lifestyle factors combined with genomic data can provide early warnings for lung cancer risk.
 
 
 
