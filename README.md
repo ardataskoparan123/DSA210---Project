@@ -1,6 +1,6 @@
 # DSA210 Project Proposal - Arda Taşkoparan
 
-# Effect of Tobacco Usage in Cancer Patients in the Expression of Cancer Related Genes
+# Effect of Tobacco and Alcohol Usage in Cancer Patients in the Expression of Cancer Related Genes
 
 ## Idea of Project
 
