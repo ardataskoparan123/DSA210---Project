@@ -55,13 +55,13 @@ Thus, no additional normalization or scaling was applied before statistical test
 
 ---
 
-## 🧮 Risk Score Construction
+## Risk Score Construction
 
 To quantify patient lifestyle exposure, categorical smoking and alcohol indicators were converted into numeric scores. This enabled more effective statistical testing and visualization.
 
 Before applying mappings, patients labeled as `"Current Reformed Smoker, Duration Not Specified"` were excluded due to ambiguity.
 
-### 🔁 Tobacco Risk Scoring
+### Tobacco Risk Scoring
 
 Three variables were used:
 - **Smoking Status** (e.g., Lifelong Non-Smoker → 0, Current Smoker → 3)
@@ -70,7 +70,7 @@ Three variables were used:
 
 These were summed to create a composite `tobacco_risk` score ranging from **0 (no risk)** to **10 (high risk)**.
 
-### 🍷 Alcohol Risk Scoring
+### Alcohol Risk Scoring
 
 Two fields were used:
 - **Alcohol History** (`Yes` = 1, `No` = 0)
