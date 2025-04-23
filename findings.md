@@ -53,5 +53,31 @@ All gene expression features were already **standardized**, meaning:
 
 Thus, no additional normalization or scaling was applied before statistical testing.
 
-Y
+---
+
+## 🧮 Risk Score Construction
+
+To quantify patient lifestyle exposure, categorical smoking and alcohol indicators were converted into numeric scores. This enabled more effective statistical testing and visualization.
+
+Before applying mappings, patients labeled as `"Current Reformed Smoker, Duration Not Specified"` were excluded due to ambiguity.
+
+### 🔁 Tobacco Risk Scoring
+
+Three variables were used:
+- **Smoking Status** (e.g., Lifelong Non-Smoker → 0, Current Smoker → 3)
+- **Cigarettes Per Day** (increasing scale from ≤12 → 0 up to >48 → 4)
+- **Years Smoked** (scored from ≤14 → 0 up to >56 → 4)
+
+These were summed to create a composite `tobacco_risk` score ranging from **0 (no risk)** to **10 (high risk)**.
+
+### 🍷 Alcohol Risk Scoring
+
+Two fields were used:
+- **Alcohol History** (`Yes` = 1, `No` = 0)
+- **Alcohol Intensity** (Lifelong Non-Drinker → 0, Occasional Drinker → 2)
+
+These were summed to form the `alcohol_risk` score (range: 0–3).
+
+The resulting numeric scores allowed for consistent group-based analyses of their relationship with gene expression outcomes.
+
 
