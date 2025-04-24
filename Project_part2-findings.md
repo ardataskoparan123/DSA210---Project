@@ -189,7 +189,7 @@ This boxplot depicts the distribution of **ALK gene expression** across patient 
 - The **alcohol_risk = 1** group again exhibits **almost no vertical spread**, mirroring the trend observed in KRAS and EGFR.
 - Groups **2** has the **narrowest** box when compared to other genes and group **3** shows moderate dispersion and more outliers compared to other genes.
 
-### 📉 Interpretation
+### Interpretation
 
 The updated boxplot reinforces that **ALK expression** is highly variable in individuals with **no reported alcohol usage** (alcohol_risk = 0), consistent with previous genes like EGFR and KRAS.
 
@@ -198,6 +198,15 @@ The updated boxplot reinforces that **ALK expression** is highly variable in ind
 - The increase in **dispersion and outliers in group 3** implies that ALK expression may be **more biologically reactive** to heavier alcohol exposure.
 
 However, given the **strong imbalance in group sizes**, especially the dominance of risk level 0, these patterns should be validated with appropriate statistical tests. The results hint that **ALK may be more sensitive to alcohol-related biological changes** compared to KRAS or EGFR, especially at the extremes of alcohol consumption.
+
+### Additional Visualizations
+
+To provide further visual variety and support exploratory insights, the accompanying Jupyter Notebook (`.ipynb` file) includes additional plots that were not all included in this markdown report:
+
+- **Grouped boxplots** comparing all three genes across selected tobacco/alcohol risk levels
+- **Pairplots** exploring relationships between gene expressions
+- **Barplots** showing mean gene expression ± standard deviation across risk scores
+
 
 ---
 
