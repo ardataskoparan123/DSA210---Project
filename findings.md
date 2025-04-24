@@ -82,14 +82,12 @@ The resulting numeric scores allowed for consistent group-based analyses of thei
 
 
 # Explatory Data Analysis
-
+---
 ## EGFR Expression by Tobacco Risk Score
 
 This boxplot illustrates the distribution of **EGFR gene expression** across patients grouped by their computed **tobacco_risk** score.
 
-![image](https://github.com/user-attachments/assets/b13f031d-f27e-44dc-a255-cfd708c10cff)
-
-
+![image](https://github.com/user-attachments/assets/28a7697d-9b9d-4ad9-931f-95a653e94df0)
 
 ### Observations
 
@@ -101,3 +99,23 @@ This boxplot illustrates the distribution of **EGFR gene expression** across pat
 ### Interpretation
 
 There is a **slight visual trend** suggesting a decrease in EGFR expression with increasing tobacco risk, though this difference is subtle.
+
+## KRAS Expression by Tobacco Risk Score
+
+This boxplot visualizes **KRAS gene expression** values distributed across patients with varying levels of **tobacco_risk**.
+
+![image](https://github.com/user-attachments/assets/aedf8305-03dd-44e1-805c-188712ce5343)
+
+### Observations
+
+- Compared to EGFR, **KRAS expression is more widely distributed** across the risk spectrum.
+- Low-risk groups (e.g., 0–3) show **greater variance** in expression, with multiple high-value outliers.
+- As tobacco risk increases, the **median and interquartile range tend to decrease**, indicating potentially lower expression in higher-risk groups.
+- Outliers persist throughout, including extreme values at low (0–4) and high (9) risk scores.
+
+### Interpretation
+
+The trend in this plot hints at a **negative correlation** between tobacco exposure and KRAS expression — i.e., increased tobacco use may be associated with suppressed KRAS activity. The **more noticeable spread** and variability also suggest that KRAS may be more sensitive to tobacco-related biological processes than EGFR.
+
+
+
