@@ -204,6 +204,79 @@ However, given the **strong imbalance in group sizes**, especially the dominance
 # Hypothesis Testing
 ---
 
+### Hypotheses
+
+To statistically assess the relationship between lifestyle factors (tobacco and alcohol use) and the expression of lung cancer-related genes (**KRAS**, **EGFR**, and **ALK**), I formed following hypotheses:
+
+- **Null Hypothesis (H₀):** Tobacco and alcohol usage have **no significant effect** on the expression levels of lung cancer-related genes KRAS, EGFR, and ALK.
+- **Alternative Hypothesis (H₁):** Tobacco and alcohol usage **significantly influence** the expression levels of lung cancer-related genes KRAS, EGFR, and ALK.
+
+## ANOVA Results
+
+To determine whether gene expression levels vary significantly across **different tobacco and alcohol risk levels**, one-way ANOVA (Analysis of Variance) tests were conducted for each gene.
+
+### EGFR Expression
+
+- **Tobacco Risk:** F = 2.303, p = 0.0113 
+- **Alcohol Risk:** F = 1.189, p = 0.3129 
+
+**Interpretation:** EGFR expression varies significantly across tobacco risk groups (p < 0.05), suggesting that smoking may influence EGFR gene activity. However, there is no statistically significant difference across alcohol risk groups.
+
+
+### KRAS Expression
+
+- **Tobacco Risk:** F = 3.229, p = 0.0004 
+- **Alcohol Risk:** F = 0.119, p = 0.9490 
+
+**Interpretation:** KRAS expression shows a highly significant variation with tobacco exposure. The extremely low p-value (p < 0.001) indicates a strong potential relationship. No significant association was observed with alcohol risk.
+
+
+### ALK Expression
+
+- **Tobacco Risk:** F = 5.342, p = 0.0000 
+- **Alcohol Risk:** F = 1.253, p = 0.2893 
+
+**Interpretation:** ALK expression is **strongly influenced by tobacco risk** (p < 0.001), showing the most significant variation among the three genes. Similar to the others, no significant variation was found with alcohol risk levels.
+
+---
+
+## Correlation Analysis: Gene Expression vs Risk Scores
+
+To assess the **monotonic relationship** between behavioral risk factors and gene expression levels, **Spearman correlation coefficients** were calculated. This method is suitable due to its ability to capture non-linear associations and its robustness to outliers.
+
+### Correlation with Tobacco Risk
+
+| Gene  | Spearman r  | p-value | Interpretation                 |
+|-------|-------------|--------|---------------------------------|
+| EGFR  | -0.043      | 0.1792 | Very weak, non-significant      |
+| KRAS  |  0.085      | 0.0069 | Weak, statistically significant |
+| ALK   |  0.086      | 0.0062 | Weak, statistically significant |
+
+**Interpretation:**  
+KRAS and ALK both show **weak but statistically significant** positive correlations with tobacco risk. This suggests that as tobacco risk increases, there's a slight tendency for expression levels of these genes to rise. However, the correlation is modest (r ≈ 0.08). EGFR shows a slight negative correlation, but it is **not statistically significant**.
+
+
+### Correlation with Alcohol Risk
+
+| Gene  | Spearman r | p-value | Interpretation                      |
+|-------|------------|---------|-------------------------------------|
+| EGFR  |  0.125     | 0.0001  | Weak, statistically significant     |
+| KRAS  | -0.033     | 0.2926  | Very weak, non-significant          |
+| ALK   |  0.328     | 0.0000  | Moderate, statistically significant |
+
+**Interpretation:**  
+ALK shows a **moderate and statistically significant** positive correlation with alcohol risk (r = 0.328), suggesting that higher alcohol exposure may be associated with higher ALK expression. EGFR also has a **weak but significant** positive correlation. KRAS, in contrast, shows a very weak and non-significant negative correlation.
+
+
+# Summary and Conclusion
+---
+
+Based on exploratory visualizations and hypothesis testing, we evaluated whether tobacco and alcohol use significantly affect the expression of lung cancer-related genes: **KRAS**, **EGFR**, and **ALK**.
+
+- For **tobacco risk**, we **reject the null hypothesis (H₀)**. ANOVA and correlation analyses show statistically significant associations with all three genes, especially ALK and KRAS.
+- For **alcohol risk**, we **fail to reject the null hypothesis (H₀)** overall. While ALK shows a moderate correlation and EGFR a weak one, ANOVA results do not support strong group-wise differences.
+
+Overall, tobacco exposure has a more consistent and measurable effect on gene expression in this dataset, with ALK emerging as the most responsive gene to both behavioral risk factors.
 
 
 
