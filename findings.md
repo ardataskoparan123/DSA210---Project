@@ -87,6 +87,10 @@ The resulting numeric scores allowed for consistent group-based analyses of thei
 
 This boxplot illustrates the distribution of **EGFR gene expression** across patients grouped by their computed **tobacco_risk** score.
 
+![image](https://github.com/user-attachments/assets/b13f031d-f27e-44dc-a255-cfd708c10cff)
+
+
+
 ### Observations
 
 - Expression values are **centered around zero** across all groups, consistent with standardized data.
