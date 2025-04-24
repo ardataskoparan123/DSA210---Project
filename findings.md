@@ -92,7 +92,7 @@ This boxplot illustrates the distribution of **EGFR gene expression** across pat
 ### Observations
 
 - Expression values are **centered around zero** across all groups, consistent with standardized data.
-- The **spread (IQR)** appears slightly wider at lower risk scores (0–3), suggesting more variability in expression among non-smokers or low-risk individuals.
+- The **spread (IQR)** appears slightly wider at lower risk scores (0–4), suggesting more variability in expression among non-smokers or low-risk individuals.
 - Several **outliers** are visible in each group, especially at lower risk levels. These likely represent biologically extreme expression patterns.
 - As tobacco risk increases beyond 6, expression levels appear to **narrow and flatten**, with fewer high-expression outliers.
 
@@ -109,7 +109,7 @@ This boxplot visualizes **KRAS gene expression** values distributed across patie
 ### Observations
 
 - Compared to EGFR, **KRAS expression is more widely distributed** across the risk spectrum.
-- Low-risk groups (e.g., 0–3) show **greater variance** in expression, with multiple high-value outliers.
+- Low-risk groups (e.g. 0–3) show **greater variance** in expression, with multiple high-value outliers.
 - As tobacco risk increases, the **median and interquartile range tend to decrease**, indicating potentially lower expression in higher-risk groups.
 - Outliers persist throughout, including extreme values at low (0–4) and high (9) risk scores.
 
@@ -125,7 +125,7 @@ This boxplot illustrates **ALK gene expression** across patient groups with diff
 
 ### Observations
 
-- Expression levels at **tobacco_risk = 0** show the **widest range** and contain many **extreme outliers**, some above 10.
+- Expression levels at **tobacco_risk = 0** show the **widest range** and contain many **extreme outliers**.
 - As tobacco risk increases, the **spread of expression tightens**, and median values stay close to zero.
 - Most boxplots show **very short interquartile ranges**, indicating that most patients—regardless of tobacco exposure—have ALK expression near 0.
 - A few outliers exist across all risk levels, but their **frequency and intensity** are highest in the no-risk group (0.0).
@@ -158,3 +158,52 @@ There is **no strong visual trend** suggesting a consistent increase or decrease
 This chart highlights:
 - The **sparsity** of alcohol data
 - The **importance of cautious interpretation** when sample sizes differ drastically between groups
+
+## KRAS Expression by Alcohol Risk Score
+
+This boxplot shows the distribution of **KRAS gene expression** across patient groups based on their calculated **alcohol_risk**.
+
+![image](https://github.com/user-attachments/assets/919d72fc-695b-4dd3-8560-ec3e47a53292)
+
+### Observations
+
+- The **alcohol_risk = 0** group again has the **highest count and widest spread**, with numerous outliers reaching above 15.
+- The **alcohol_risk = 1** group shows **almost no vertical spread**, with expression values nearly identical across all samples — suggesting either extreme uniformity or very limited data.
+- Groups **2** and **3** display more spread, especially `3`, which shows modest variability and a few outliers.
+
+### Interpretation
+
+There is **no consistent monotonic trend** in KRAS expression like in the case of EGFR as alcohol risk increases. However:
+- The **lack of variance in alcohol_risk = 1** stands out and may indicate a sampling issue or a biologically narrow profile.
+- Groups with higher risk (2 and 3) resemble group 0 in structure but on a **smaller scale**, due to fewer observations.
+
+## ALK Expression by Alcohol Risk Score
+
+This boxplot depicts the distribution of **ALK gene expression** across patient groups defined by their **alcohol_risk** score.
+
+![image](https://github.com/user-attachments/assets/facf303c-c1fd-4b1f-83ea-88b25de66b00)
+
+### Observations
+
+- The **alcohol_risk = 0** group is the largest and shows a **wide spread** of values, including many high outliers just like in the case of tobacco risk.
+- The **alcohol_risk = 1** group again exhibits **almost no vertical spread**, mirroring the trend observed in KRAS and EGFR.
+- Groups **2** has the **narrowest** box when compared to other genes and group **3** shows moderate dispersion and more outliers compared to other genes.
+
+### 📉 Interpretation
+
+The updated boxplot reinforces that **ALK expression** is highly variable in individuals with **no reported alcohol usage** (alcohol_risk = 0), consistent with previous genes like EGFR and KRAS.
+
+- The **extreme compression of values** in group `1` likely reflects a **very limited sample size** again.
+- The **narrow spread in group 2**, more distinct than in other genes, suggests ALK expression may be **tightly regulated** or uniformly low among occasional drinkers.
+- The increase in **dispersion and outliers in group 3** implies that ALK expression may be **more biologically reactive** to heavier alcohol exposure.
+
+However, given the **strong imbalance in group sizes**, especially the dominance of risk level 0, these patterns should be validated with appropriate statistical tests. The results hint that **ALK may be more sensitive to alcohol-related biological changes** compared to KRAS or EGFR, especially at the extremes of alcohol consumption.
+
+---
+
+# Hypothesis Testing
+---
+
+
+
+
