@@ -78,6 +78,22 @@ Two fields were used:
 
 These were summed to form the `alcohol_risk` score (range: 0–3).
 
-The resulting numeric scores allowed for consistent group-based analyses of their relationship with gene expression outcomes.
+The resulting numeric scores allowed for consistent group-based analyses of their relationship with gene expression outcomes and they were collected in the file "genes_risk_summary.tsv". Explatory data analysis and hypothesis testing were done using this file's dataframe.
 
 
+# Explatory Data Analysis
+
+## EGFR Expression by Tobacco Risk Score
+
+This boxplot illustrates the distribution of **EGFR gene expression** across patients grouped by their computed **tobacco_risk** score.
+
+### Observations
+
+- Expression values are **centered around zero** across all groups, consistent with standardized data.
+- The **spread (IQR)** appears slightly wider at lower risk scores (0–3), suggesting more variability in expression among non-smokers or low-risk individuals.
+- Several **outliers** are visible in each group, especially at lower risk levels. These likely represent biologically extreme expression patterns.
+- As tobacco risk increases beyond 6, expression levels appear to **narrow and flatten**, with fewer high-expression outliers.
+
+### Interpretation
+
+There is a **slight visual trend** suggesting a decrease in EGFR expression with increasing tobacco risk, though this difference is subtle.
