@@ -117,5 +117,44 @@ This boxplot visualizes **KRAS gene expression** values distributed across patie
 
 The trend in this plot hints at a **negative correlation** between tobacco exposure and KRAS expression — i.e., increased tobacco use may be associated with suppressed KRAS activity. The **more noticeable spread** and variability also suggest that KRAS may be more sensitive to tobacco-related biological processes than EGFR.
 
+## ALK Expression by Tobacco Risk Score
 
+This boxplot illustrates **ALK gene expression** across patient groups with different **tobacco_risk** scores.
 
+![image](https://github.com/user-attachments/assets/edf498c9-cefd-4529-8095-5882faa87d3e)
+
+### Observations
+
+- Expression levels at **tobacco_risk = 0** show the **widest range** and contain many **extreme outliers**, some above 10.
+- As tobacco risk increases, the **spread of expression tightens**, and median values stay close to zero.
+- Most boxplots show **very short interquartile ranges**, indicating that most patients—regardless of tobacco exposure—have ALK expression near 0.
+- A few outliers exist across all risk levels, but their **frequency and intensity** are highest in the no-risk group (0.0).
+
+### Interpretation
+
+There is a visible trend of **higher expression variability** in low-risk individuals, particularly among those with no tobacco exposure. This might suggest a suppressive relationship between smoking and ALK expression. However, the median doesn’t vary drastically across risk levels.
+
+The dramatic presence of **outliers at 0.0** may point to a subgroup of biologically distinct patients whose ALK expression is abnormally elevated and unaffected by tobacco risk.
+
+---
+
+## EGFR Expression by Alcohol Risk Score
+
+This boxplot shows the distribution of **EGFR gene expression** levels for patients grouped by their **alcohol_risk** score.
+
+![image](https://github.com/user-attachments/assets/76fa9914-69cd-4d0a-869a-de8e98000def)
+
+### Observations
+
+- The **majority of patients** fall into the `alcohol_risk = 0` group, resulting in a dense cluster with visible outliers.
+- Higher alcohol risk groups (1,2) have **significantly fewer samples**, as reflected in the narrow boxes and absence of large outlier ranges.
+- The **median expression** remains fairly stable across all alcohol risk levels.
+- A few extreme outliers are present in both `alcohol_risk = 0` and `3`, suggesting some biological heterogeneity regardless of drinking status.
+
+### Interpretation
+
+There is **no strong visual trend** suggesting a consistent increase or decrease in EGFR expression with rising alcohol risk. However, the large imbalance in group sizes—especially the dominance of `alcohol_risk = 0`—makes it difficult to draw reliable conclusions.
+
+This chart highlights:
+- The **sparsity** of alcohol data
+- The **importance of cautious interpretation** when sample sizes differ drastically between groups
