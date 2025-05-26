@@ -31,7 +31,7 @@ To predict the expression levels of **ALK**, **KRAS**, and **EGFR** using tobacc
 ### Models Used 
 - Linear Regression
 - Random Forest Regressor
----
+
 
 ### Regression Performance Metrics
 
@@ -140,14 +140,16 @@ In general among the models tested, Random Forest Classifier consistently outper
 ![image](https://github.com/user-attachments/assets/4851bf1a-27d6-4ec7-9ed4-60fced661430)
 
 
+
 ## Multiclass Classification: Predicting Tobacco Risk from Gene Expression
+
 
 ### Objective
 ---
 To classify patients into **Low**, **Medium**, or **High** tobacco risk groups using their gene expression values.
 
+
 ### Model Used
----
 - Random Forest Classifier
 
 
@@ -166,7 +168,6 @@ To classify patients into **Low**, **Medium**, or **High** tobacco risk groups u
 - Weighted average f1-score: **0.56**
 
 ### Visualizations
----
 
 Visualization for this step include **confusion matrix** for tobacco risk group prediction and the **feature importance plot** showing the relative contributions of ALK, EGFR, and KRAS in predicting tobacco risk:
 
