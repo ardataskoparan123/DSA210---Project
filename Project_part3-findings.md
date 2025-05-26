@@ -23,8 +23,6 @@ These two numeric feautures allowed for a straightforward input into regression 
 
 ## Regression Tasks
 
----
-
 ### Objective
 ---
 
@@ -78,13 +76,11 @@ Both models performed poorly, and the negative R² scores indicate that the mode
 
 Some improvement with Random Forest, but overall performance remained weak.
 
----
 
 ### Results
 ---
 These results confirm that gene expression levels are not linearly predictable from tobacco and alcohol risk scores alone as both of the models showed low predictive perfonmance . Non-linear models like Random Forest performed slightly better but still yielded in low explanatory power. This aligns with earlier correlation analyses that showed only weak associations.
 
----
 
 ### Visualizations
 ---
@@ -99,10 +95,9 @@ Scatter plots showing **Actual vs Predicted** values were created for each gene 
 ---
 
 ## Classification Tasks
----
+
 To classify each sample's gene expression (ALK, KRAS, EGFR) as either **high** or **low**, using the median as the threshold.
 
----
 
 ### Models Used
 ---
@@ -110,6 +105,80 @@ To classify each sample's gene expression (ALK, KRAS, EGFR) as either **high** o
 - Random Forest Classifier
 
 
+### Results
+---
+#### ALK 
+- Logistic Regression Accuracy: **66%**
+- Random Forest Accuracy: **74%**
+- Random Forest provided a better balance between precision and recall.
+
+#### KRAS 
+- Logistic Regression Accuracy: **49%**
+- Random Forest Accuracy: **43%**
+- Overall performance was weak for KRAS.
+
+#### EGFR
+- Logistic Regression Accuracy: **54%**
+- Random Forest Accuracy: **65%**
+- Improved performance with Random Forest, especially in recall.
+
+
+In general among the models tested, Random Forest Classifier consistently outperformed Logistic Regression for ALK and EGFR, achieving accuracies of 74% and 65% respectively. KRAS, on the other hand, showed poor classification performance with both models, hovering around chance-level accuracy. These results would suggest that behavioral risk factors have moderate predictive power for certain genes particular for ALK in this case but are insufficient alone for reliable classification across all targets.
+
+
+
+### Feature Importance and Plotting
+
+---
+- In all Random Forest models, **tobacco_risk** had a higher importance than **alcohol_risk**.
+- Bar plots showing feature importances for ALK, KRAS, and EGFR:
+
+![image](https://github.com/user-attachments/assets/7985728e-ff84-4af6-b509-02c92146c1a7)
+
+![image](https://github.com/user-attachments/assets/f18f4c8e-8d52-4bce-aaea-c4c930792c93)
+
+![image](https://github.com/user-attachments/assets/4851bf1a-27d6-4ec7-9ed4-60fced661430)
+
+
+## Multiclass Classification: Predicting Tobacco Risk from Gene Expression
+
+### Objective
+---
+To classify patients into **Low**, **Medium**, or **High** tobacco risk groups using their gene expression values.
+
+### Model Used
+---
+- Random Forest Classifier
+
+
+### Results
+
+- Accuracy: **62%** (with `random_state=45`)
+- **Low risk** group was predicted well (precision = 0.67, recall = 0.87).
+- **Medium and High** risk groups were predicted poorly, with High group having 0 precision and recall.
+
+### Classification Report
+---
+- Low: precision 0.67, recall 0.87, f1-score 0.76
+- Medium: precision 0.36, recall 0.23, f1-score 0.28
+- High: precision 0.00, recall 0.00, f1-score 0.00
+
+- Weighted average f1-score: **0.56**
+
+### Visualizations
+---
+
+Visualization for this step include **confusion matrix** for tobacco risk group prediction and the **feature importance plot** showing the relative contributions of ALK, EGFR, and KRAS in predicting tobacco risk:
+
+![image](https://github.com/user-attachments/assets/8002c6d4-4a2b-4b1e-b427-9e73b2cb6bd5)
+
+![image](https://github.com/user-attachments/assets/a47bc6f3-5e6e-4e5d-a59d-ef5063d87eaf)
+
+## Extra Notes 
+
+- Gene expression values were log-transformed in regression models to fix skewness.
+- Hyperparameter `random_state` was tuned couple of times to improve accuracy (Last value was 45).
+- The machine learning results supported several findings from EDA but also introduced new insights into the predictive value of each gene.
 
 
 
@@ -121,11 +190,7 @@ To classify each sample's gene expression (ALK, KRAS, EGFR) as either **high** o
 
 
 
-
-
-
-
-
+ 
 
 
 
